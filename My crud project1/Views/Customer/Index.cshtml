@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Customer</h2>
+
+@model List<My_crud_project1.Models.customer>
+
+@foreach(var customer in Model)
+{
+    <div> Name:@customer.name</div>
+    <div> Address:@customer.address</div>
+}
+
+<div id="customers"></div>
+@section scripts{
+
+
+    <script src="~/Scripts/react/dist/Customers_bundle.js"></script>
+
+
+}
+
